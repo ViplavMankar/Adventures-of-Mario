@@ -691,7 +691,7 @@ function goombaMove(g){
 }
 
 function wallHit(p,b,w){
-  if(p.pX >= b.bX - b.bWidth/2 && p.pX <= b.bX + b.bWidth/2 && p.pY+p.pHeight/2 >= w.wY - w.wHeight/2 && p.pY+p.pHeight/2 <= w.wY + w.wHeight/2){
+  if(p.pX >= b.bX - b.bWidth/2 && p.pX <= b.bX + b.bWidth/2 && p.pY >= w.wY - w.wHeight && p.pY <= w.wY + w.wHeight){
     velocity = fallingSpeed;//make mario fall
     jumpCounter = jumpPower; // mario has no more jump energy
   }
